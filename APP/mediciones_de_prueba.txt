@@ -1,0 +1,29 @@
+espacio (4+20+13+30 = 67bytes por registro)
+#		SF		EH
+1k(67KB)	1.15x		1.7x
+5k(335KB)	1.16x		1.6x		
+10k(670KB)	1.16x		1.4x
+
+import
+#		SF		EH
+1k		1.0s		0.8s
+5k		9.3s		4.6s
+10k		29.8s		10.7s
+
+insert uno
+#		SF		EH
+1k		1.5ms		1ms
+5k		1.5ms		1ms
+10k		1.5ms		1ms
+
+search uno
+#		SF		EH
+1k		1ms		1ms
+5k		1ms		1ms
+10k		1ms		1ms
+
+search diez al mismo tiempo
+#		SF		EH
+1k		2ms		2ms
+5k		2ms		2ms
+10k		2ms		2ms
